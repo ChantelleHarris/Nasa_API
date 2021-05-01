@@ -1,0 +1,194 @@
+a{
+    text-decoration: none;
+}
+#about{
+    max-width: 500px;
+    max-height: auto;
+    padding-left: 50px;
+    font-size: 20px;
+    overflow:scroll;
+}
+#action{
+    animation-delay: 12s;
+    animation-duration: 2s;
+}
+body{
+    background-image: url('https://media2.giphy.com/media/CKRx4oUu3dzLa/giphy.gif?cid=ecf05e47xhqpqdankh5709a18mfe5ejc580tvtgc7gkpdhpt&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.box__wrapper { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    z-index:-1;
+}
+.box__wrapper #button{
+    display: inline-block;
+    border-color: black;
+    box-shadow: 0px 0px 16px yellow;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'New Tegomin', serif;
+    color: white;
+    padding-bottom: 5px;
+    animation-name: opacityOn;
+    animation-timing-function: ease;
+    animation-fill-mode:backwards;
+    animation-delay: 23s;
+}
+.box__wrapper #button:hover{
+    border-color: white;
+    color: gold;
+}
+.box__wrapper a#displayBox {
+    display: block;
+    border-color: black;
+    box-shadow: 0px 0px 32px white;
+    background-color: transparent;
+    position: relative;
+    margin-top: 100px;
+    padding: 10px;
+    height:600px;
+    width: 600px;
+    overflow: scroll;
+    animation-name: boxAppear;
+    -webkit-animation: boxAppear 2s 1.5s;
+    -moz-animation: boxAppear 2s 1.5s; 
+    -ms-animation: boxAppear 2s 1.5s; 
+    -o-animation: boxAppear 2s 1.5s; 
+    animation: boxAppear 2s 1.5s; 
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode:backwards;
+    animation-delay: 21s;
+}
+@-webkit-keyframes boxAppear {   
+    0%  { -webkit-transform: scale(0); }
+    100% { -webkit-transform: scale(1); } 
+}
+@-moz-keyframes boxAppear {
+    0%  { -moz-transform: scale(0); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes boxAppear {
+    0%  { -o-transform: scale(0); }
+    100% { -o-transform: scale(1); }
+}
+@-ms-keyframes boxAppear {
+    0%  { -ms-transform: scale(0); }
+    100% { -ms-transform: scale(1); }
+}
+@keyframes boxAppear {
+    0%  { transform: scale(0); }
+    100% { transform: scale(1); }  
+}
+.circle__wrapper { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    z-index:-1;
+}
+.circle__wrapper a.circle { 
+    display:block; 
+    height: 600px; 
+    width: 600px; 
+    background-color: black;
+    box-shadow: 0px 0px 16px white;
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    border-radius: 50%; 
+    -webkit-animation: growUp 2s 1.5s;
+    -moz-animation: growUp 2s 1.5s; 
+    -ms-animation: growUp 2s 1.5s; 
+    -o-animation: growUp 2s 1.5s; 
+    animation: growUp 2s 1.5s; 
+    animation-iteration-count: 2;
+    animation-direction:alternate;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes growUp {   
+    0%  { -webkit-transform: scale(0); }
+    100% { -webkit-transform: scale(1); } 
+}
+@-moz-keyframes growUp {
+    0%  { -moz-transform: scale(0); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes growUp {
+    0%  { -o-transform: scale(0); }
+    100% { -o-transform: scale(1); }
+}
+@-ms-keyframes growUp {
+    0%  { -ms-transform: scale(0); }
+    100% { -ms-transform: scale(1); }
+}
+@keyframes growUp {
+    0%  { transform: scale(0); }
+    100% { transform: scale(1); }  
+}
+#date{
+    
+    position:relative;
+}
+h2{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'New Tegomin', serif;
+    animation-name: opacityOn;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-timing-function:ease-in;
+}
+@keyframes opacityOn {
+    0% {
+    opacity: 0;
+    }
+    50%{
+    opacity: 0.5;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+h3{
+    color: white;
+}
+iframe{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 100;
+    left: 100;   
+}
+#info{
+    animation-delay: 9s;
+    animation-duration: 2s;  
+}
+#intro{
+    animation-delay:6s;
+    animation-duration: 2s;
+    margin-top: 300px;
+}
+p{
+    color: white;
+}
+.pic{
+    max-width: 500px;
+    max-height: auto;
+    display:inline-block;
+    box-shadow: 0px 0px 8px white;
+}
